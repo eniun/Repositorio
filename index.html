@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PARALAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Animaciones css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Menú scroll 
+      https://www.youtube.com/watch?v=aysM8qHnffQ
+      -->
+  </head>
+
+  <body>
+
+    <!-- Preload -->
+    <div class="preload" id="cargador"></div>
+
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Clase para ocultar elementos -->
+  <div class="hide" id="contenido">
+    
+    <!-- Elementos de paralax -->
+    <div class="wrapper">
+      <div class="parallax__group">
+        <div class="parallax__layer Paralex-6"></div>
+        <div class="parallax__layer Paralex-5"></div>
+        <div class="parallax__layer Paralex-4"></div>
+        <div class="parallax__layer Paralex-3"></div>
+        <div class="parallax__layer Paralex-2"></div>
+        <div class="parallax__layer Paralex-1"></div>
+        <div class="parallax__layer hero-text">
+          <div class="claim">
+            <h1>DISEÑO UX/IU</h1>
+            <h2>JORGE JUAN OLIVA CASTILLO</h2>
+          </div>
+        </div>
+      </div>
+      <div class="parallax__group info-container">
+        <h1>Siguiente contenedor</h1>
+        <div class="" id="carga"></div>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sint quos eos temporibus voluptatum eligendi optio error nemo ex quaerat itaque tempore expedita, sunt nobis omnis minus impedit maxime odit, nostrum totam, voluptatem officiis accusantium.</h2>
+      </div>
+    </div>
+  </div>
+
+    <!-- JavaScript para escuchar cuando se ha cargado el contenido 
+    (https://www.youtube.com/watch?v=avzupi12bmY)
+    Más animaciones en: https://github.com/daneden/animate.css/
+    -->
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(carga, 2000);
+        function carga(){
+          document.getElementById('cargador').className = 'hide';
+          document.getElementById('contenido').className = 'animated fadeIn';
+        }
+      })
+      </script>
+    <!-- Script para animaciones. Más info en: 
+    https://www.creativebloq.com/how-to/export-after-effects-animations-to-html5
+    https://cleventy.com/como-animar-con-lottie/
+    -->
+    <script src="./js/lottie.js"></script>
+    <script src="./js/index.js"></script>
+
+  </body>
+</html>
