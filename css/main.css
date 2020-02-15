@@ -1,3 +1,18 @@
+/*::-webkit-scrollbar{
+    display: none;
+}*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0f5fcf;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    display: none;
+    background-color: transparent;
+}
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +25,17 @@ body {
   font-family: Montserrat;
   font-weight: 700;
 }
-
+.preload {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    max-width: 80%;
+}
 .hero {
     position: relative;
     width: 100%;
@@ -20,7 +45,7 @@ body {
     justify-content: center;
     text-align: center;
     background-color: #151b25;
-  }
+}
 
 .PantallaHero {
     width: 100%;
