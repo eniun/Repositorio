@@ -1,76 +1,94 @@
-<!DOCTYPE html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>PARALAX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/main.css" />
+<head>
+    <link rel="stylesheet" href="./css/main.css"/>
 
     <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Animaciones css -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Fade -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-    <!-- Menú scroll 
-      https://www.youtube.com/watch?v=aysM8qHnffQ
-      -->
-  </head>
+</head>
+<body>
 
-  <body>
+<!-- Preload -->
+<div class="preload" id="cargador"></div>
 
-    <!-- Preload -->
-    <div class="preload" id="cargador"></div>
-
-  <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <!-- Clase para ocultar elementos -->
   <div class="hide" id="contenido">
-    
-    <!-- Elementos de paralax -->
-    <div class="wrapper">
-      <div class="parallax__group">
-        <div class="parallax__layer Paralex-6"></div>
-        <div class="parallax__layer Paralex-5"></div>
-        <div class="parallax__layer Paralex-4"></div>
-        <div class="parallax__layer Paralex-3"></div>
-        <div class="parallax__layer Paralex-2"></div>
-        <div class="parallax__layer Paralex-1"></div>
-        <div class="parallax__layer hero-text">
-          <div class="claim">
-            <h1>DISEÑO UX/IU</h1>
-            <h2>JORGE JUAN OLIVA CASTILLO</h2>
-          </div>
-        </div>
-      </div>
-      <div class="parallax__group info-container">
-        <h1>Siguiente contenedor</h1>
-        <div class="" id="carga"></div>
-        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sint quos eos temporibus voluptatum eligendi optio error nemo ex quaerat itaque tempore expedita, sunt nobis omnis minus impedit maxime odit, nostrum totam, voluptatem officiis accusantium.</h2>
-      </div>
-    </div>
-  </div>
 
-    <!-- JavaScript para escuchar cuando se ha cargado el contenido 
-    (https://www.youtube.com/watch?v=avzupi12bmY)
-    Más animaciones en: https://github.com/daneden/animate.css/
-    -->
-    <script>
-      window.addEventListener('load', () => {
+<section class="rellax hero" data-rellax-speed="16">
+    <div class="rellax PrimerParallax1" data-rellax-speed="-10"></div>
+    <div class="rellax PrimerParallax2" data-rellax-speed="-5"></div>
+    <div class="rellax PrimerParallax3" data-rellax-speed="0"></div>
+    <div class="rellax PrimerParallax4" data-rellax-speed="5"></div>
+    <div class="rellax PrimerParallax5" data-rellax-speed="10"></div>
+    <div class="rellax PrimerParallax6" data-rellax-speed="15"></div>
+    <div class="claim">
+        <h1>DISEÑO UX/IU</h1>
+        <h2>JORGE JUAN OLIVA CASTILLO</h2>
+      </div>
+</section>  
+
+<a class="rellax Claim" data-easing="easeInQuint" href="#SegundoContenedor" data-rellax-speed="16">Mover</a> 
+
+<p id="SegundoContenedor"><a href="#">Fin</a></p>
+<div class="rellax PantallaHero" data-rellax-speed="35"></div>
+
+    <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
+
+<!-- JavaScript para escuchar cuando se ha cargado el contenido 
+(https://www.youtube.com/watch?v=avzupi12bmY)
+Más animaciones en: https://github.com/daneden/animate.css/
+-->
+<script>
+    window.addEventListener('load', () => {
         setTimeout(carga, 2000);
         function carga(){
-          document.getElementById('cargador').className = 'hide';
-          document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
+            document.getElementById('cargador').className = 'hide';
+            document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
         }
-      })
-      </script>
-    <!-- Script para animaciones. Más info en: 
-    https://www.creativebloq.com/how-to/export-after-effects-animations-to-html5
-    https://cleventy.com/como-animar-con-lottie/
-    -->
-    <script src="./js/lottie.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+    })
+</script>
+
+<!-- Script para iconos animados. Más info en: 
+https://www.creativebloq.com/how-to/export-after-effects-animations-to-html5
+https://cleventy.com/como-animar-con-lottie/
+-->
+<script src="./js/lottie.js"></script>
+<script src="./js/preload.js"></script>
+
+<!-- Paralax script -->
+<script type="text/javascript" src="js/rellax.min.js"></script>
+<script>
+    var rellax = new Rellax('.rellax', {
+    callback: function(position) {
+        console.log(position);
+        }
+    });
+</script>
+
+
+<!-- Desplazamiento Automático script-->
+<script src="js/smooth-scroll.polyfills.js"></script>
+        
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+		if (document.querySelector('[data-easing]')) {
+			var linear = new SmoothScroll('[data-easing="linear"]', {easing: 'linear'});
+			var scroll = new SmoothScroll('a[href*="#"]', {
+				speed: 4500,
+				speedAsDuration: true
+                });
+			var easeInOutQuint = new SmoothScroll('[data-easing="easeInOutQuint"]', {easing: 'easeInOutQuint'});
+        }
+</script>
+
+
+
+
+
+</body>
 </html>
