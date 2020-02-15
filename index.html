@@ -31,11 +31,11 @@
             </div>
         </section>  
 
-    <a class="rellax Claim" data-easing="easeInQuint" href="#SegundoContenedor" data-rellax-speed="16">Mover</a> 
+        <a class="rellax Claim" data-easing="easeInQuint" href="#SegundoContenedor" data-rellax-speed="16">Mover</a> 
 
-    <p id="SegundoContenedor"><a href="#">Fin</a></p>
-    <div class="rellax PantallaHero" data-rellax-speed="35"></div>
-    <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
+        <p id="SegundoContenedor"><a href="#">Fin</a></p>
+        <div class="rellax PantallaHero" data-rellax-speed="35"></div>
+        br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
     </div>
 <!-- JavaScript para escuchar cuando se ha cargado el contenido 
 (https://www.youtube.com/watch?v=avzupi12bmY)
@@ -43,9 +43,11 @@ Más animaciones en: https://github.com/daneden/animate.css/
 -->
 <script>
     window.addEventListener('load', () => {
+        setTimeout(carga, 3800);
+        function carga(){
             document.getElementById('cargador').className = 'hide';
             document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
-    })
+        }
 </script>
 
 <!-- Script para iconos animados. Más info en: 
