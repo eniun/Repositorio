@@ -1,7 +1,7 @@
 <head>
     <link rel="stylesheet" href="./css/main.css"/>
 
-    <!-- Compiled and minified CSS -->
+    <!-- Librería para javascript de preload -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Fade -->
@@ -12,9 +12,6 @@
 
 <!-- Preload -->
 <div class="preload" id="cargador"></div>
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <!-- Clase para ocultar elementos -->
     <div class="hide" id="contenido">
@@ -36,19 +33,22 @@
         <p id="SegundoContenedor"><a href="#">Fin</a></p>
         <div class="rellax PantallaHero" data-rellax-speed="35"></div>
         <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
-
     </div>
+
+
+<!-- Javascript para de preload -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 <!-- JavaScript para escuchar cuando se ha cargado el contenido 
 (https://www.youtube.com/watch?v=avzupi12bmY)
 Más animaciones en: https://github.com/daneden/animate.css/
 -->
 <script>
     window.addEventListener('load', () => {
-            document.getElementById('cargador').className = 'hide';
-            document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
+        document.getElementById('cargador').className = 'hide';
+        document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
     })
 </script>
-
 
 <!-- Script para iconos animados. Más info en: 
 https://www.creativebloq.com/how-to/export-after-effects-animations-to-html5
@@ -67,7 +67,6 @@ https://cleventy.com/como-animar-con-lottie/
     });
 </script>
 
-
 <!-- Desplazamiento Automático script-->
 <script src="js/smooth-scroll.polyfills.js"></script>
         
@@ -82,9 +81,6 @@ https://cleventy.com/como-animar-con-lottie/
 			var easeInOutQuint = new SmoothScroll('[data-easing="easeInOutQuint"]', {easing: 'easeInOutQuint'});
         }
 </script>
-
-
-
 
 
 </body>
