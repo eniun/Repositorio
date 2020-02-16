@@ -43,10 +43,14 @@
 (https://www.youtube.com/watch?v=avzupi12bmY)
 Más animaciones en: https://github.com/daneden/animate.css/
 -->
+
 <script>
-    window.addEventListener('load', () => {
-        document.getElementById('cargador').className = 'hide';
-        document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
+window.addEventListener('load', () => {
+        setTimeout(carga, 3800);
+        function carga(){
+            document.getElementById('cargador').className = 'hide';
+            document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
+        }
     })
 </script>
 
