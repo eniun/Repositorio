@@ -54,7 +54,7 @@ body {
     margin-top: -22;
     z-index: 3;
 }
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 768px){
     
     .PrimerParallax1 {
         position: absolute;
@@ -117,7 +117,7 @@ body {
         z-index: 3;
     }   
 }
-@media screen and (min-width: 701px){
+@media screen and (min-width: 769px){
     
     .PrimerParallax1 {
         position: absolute;
