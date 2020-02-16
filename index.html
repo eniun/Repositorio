@@ -1,8 +1,5 @@
 <head>
-
-    <!-- Carga hoja de estilos por encima de una resolucion minima MARRON -->
-    <link rel="stylesheet" media="screen and (min-width: 721px)" href="./css/main@1x.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 720px)"href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -39,7 +36,7 @@
         <p id="SegundoContenedor"><a href="#">Fin</a></p>
         <div class="rellax PantallaHero" data-rellax-speed="35"></div>
         <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
-    
+
     </div>
 <!-- JavaScript para escuchar cuando se ha cargado el contenido 
 (https://www.youtube.com/watch?v=avzupi12bmY)
@@ -47,11 +44,8 @@ Más animaciones en: https://github.com/daneden/animate.css/
 -->
 <script>
     window.addEventListener('load', () => {
-        setTimeout(carga, 3800);
-        function carga(){
             document.getElementById('cargador').className = 'hide';
             document.getElementById('contenido').className = 'animated fadeIn bounce delay-1s';
-        }
     })
 </script>
 
