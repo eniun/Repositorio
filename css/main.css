@@ -32,7 +32,7 @@ body {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     max-width: 80%;
-    z-index: 3;
+    z-index: 0;
 }
 .hero {
     position: relative;
@@ -45,15 +45,6 @@ body {
     background-color: #151b25;
 }
 @media only screen and (max-width: 768px){
-    .BotonPrimerParallax {
-        text-align: center;
-        position: absolute;
-        left: 46.5%;
-        top: 67%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        background: url(../img/1parallax1.png) no-repeat 50% 50%;
-    }
     .claim {
         text-align: center;
         position: absolute;
@@ -63,7 +54,7 @@ body {
         -webkit-transform: translate(-50%, -50%);
         max-width: 80%;
         margin-top: -30%;
-        z-index: 2;
+        z-index: -1;
     }
     h1 {
         font-size: 45px!important;
@@ -81,7 +72,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax2-1x {
         position: absolute;
@@ -91,7 +82,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax3-1x {
         position: absolute;
@@ -101,7 +92,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax4-1x {
         position: absolute;
@@ -111,7 +102,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax5-1x {
         position: absolute;
@@ -121,7 +112,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 3;
+        z-index: 0;
     }
     .PrimerParallax6-1x {
         position: absolute;
@@ -131,26 +122,26 @@ body {
         background-size: cover;
         top: 8%;
         border: 0;
-        z-index: 3;
+        z-index: 0;
     }   
     .PantallaHero {
     width: 100%;
     height: 500px;
     background-color: #151b25;
-    margin-top: -150px;
-    z-index: 3;
+    margin-top: -200px;
+    z-index: 0;
     }
-}
-@media screen and (min-width: 769px){
     .BotonPrimerParallax {
         text-align: center;
         position: absolute;
-        left: 49%;
+        left: 46.5%;
         top: 67%;
         transform: translate(-50%, -50%);
-        z-index: 2;
+        z-index: 0;
         background: url(../img/1parallax1.png) no-repeat 50% 50%;
     }
+}
+@media screen and (min-width: 769px){
     .claim {
         text-align: center;
         position: absolute;
@@ -158,7 +149,7 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
         margin-top: -100px;
-        z-index: 2;
+        z-index: -1;
     }
     h1 {
         font-size: 70px!important;
@@ -176,7 +167,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax2 {
         position: absolute;
@@ -186,7 +177,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax3 {
         position: absolute;
@@ -196,7 +187,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax4 {
         position: absolute;
@@ -206,7 +197,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 1;
+        z-index: -2;
     }
     .PrimerParallax5 {
         position: absolute;
@@ -216,7 +207,7 @@ body {
         background-size: cover;
         top: 0%;
         border: 0;
-        z-index: 3;
+        z-index: 0;
     }
     .PrimerParallax6 {
         position: absolute;
@@ -226,13 +217,22 @@ body {
         background-size: cover;
         top: 8%;
         border: 0;
-        z-index: 3;
+        z-index: 0;
     }
     .PantallaHero {
         width: 100%;
-        height: 1100px;
+        height: 500px;
         background-color: #151b25;
         margin-top: -50px;
-        z-index: 3;
+        z-index: 0;
     } 
+        .BotonPrimerParallax {
+        text-align: center;
+        position: absolute;
+        left: 49%;
+        top: 67%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        background: url(../img/1parallax1.png) no-repeat 50% 50%;
+    }
 }  
